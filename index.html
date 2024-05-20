@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">Get an Estimate for Workspace</div>
+        <div id="form1">
+            <div class="title">
+                <h2>Post your requiremeents</h2>
+                <span class="small">Please fill the form below to receive a quote for workspace. Please add all the details required.</span>
+            </div>
+            <form action="">
+                <div class="head">
+                    <span>Contact details</span>
+                    <span class="small">Please fill your information so we can get in touch with you.</span>
+                </div>
+                <div class="content">
+                    <div class="inp">
+                        <label for="userName">Name</label>
+                        <input data-length="2" type="text" name="userName" id="userName" placeholder="Your Name" />
+                    </div>
+                    <div class="inp">
+                        <label for="phone">Phone Number</label>
+                        <input data-phone="10" type="tel" name="phone" id="phone" placeholder="(123) 456 - 7890" />
+                    </div>
+                    <div class="inp">
+                        <label for="email">Email</label>
+                        <input data-email="true" type="email" name="email" id="email" placeholder="Your Mail ID" />
+                    </div>
+                    <div class="inp">
+                        <label for="date">Date</label>
+                        <input type="date" name="date" id="date" />
+                    </div>
+                </div>
+            </form>
+            <button id="next">Next</button>
+        </div>
+
+        <div id="form2">
+            <form action="">
+                <div class="head">
+                    <span>Your Requirements</span>
+                </div>
+                <div class="content">
+                    <div class="inp">
+                        <label for="space">Space Type</label>
+                        <select name="space" id="space">
+                            <option value="">Event Space</option>
+                            <option value="Space1">Space 1</option>
+                            <option value="Space2">Space 2</option>
+                            <option value="Space3">Space 3</option>
+                        </select>
+                    </div>
+                    <div class="inp">
+                        <label for="amount">Number of People</label>
+                        <input placeholder="01" type="number" id="amount" name="countOfPeople" />
+                    </div>
+                    <div class="inp">
+                        <div class="left">
+                            <label for="checkIn">Check in</label>
+                            <input type="date" name="checkIn" id="checkIn" />
+                        </div>
+                        <div class="right">
+                            <label for="checkOut">Check Out</label>
+                            <input type="date" name="checkOut" id="checkOut" />
+                        </div>
+                    </div>
+                    <div class="inp">
+                        <label for="location">Location</label>
+                        <select name="location" id="location">
+                            <option value="">City/Area</option>
+                            <option value="Baku">Baku</option>
+                            <option value="Mingechevir">Mingechevir</option>
+                            <option value="Shamaha">Shamaha</option>
+                        </select>
+                    </div>
+                    <div class="inp">
+                        <label for="preference">Any specific preferences</label>
+                        <select name="preference" id="preference">
+                            <option value="">Choose one option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="inp">
+                        <textarea name="preferenceArea">Please mention here</textarea>
+                    </div>
+                </div>
+            </form>
+            <div class="btns">
+                <button id="back">Back</button>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
